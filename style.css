@@ -1,97 +1,200 @@
-p {
-    line-height: 1.5em;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
+@media only screen and (min-width: 729px) {
+   p {
+        line-height: 1.5em;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+    }
+
+    h4 {
+        margin-block-start: .8em;
+        margin-block-end: .8em;
+    }
+
+    body {
+        display: flex;
+        justify-content: flex-start;
+        margin: 0rem;
+    }
+
+    aside {
+        display: block;
+        border-right: solid black 2px;
+        padding: 0em;
+        background-color: rgb(64, 127, 243);
+        flex-basis: 25%;
+        text-wrap: wrap;
+        
+    }
+
+    aside h3 {
+        background-color: rgb(116, 155, 226);
+        padding: 1em;
+    }
+
+    aside p {
+        margin: 0em 1em;
+    }
+
+    aside h2 {
+        margin: 1em;
+    }
+
+    #profile {
+        display: block;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+        margin-bottom: 1em;
+        
+    }
+
+    article {
+        display: block;
+        padding: 0px;
+        flex-basis: 75%;
+    }
+
+    .skills {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    div > p {
+        padding-right: 1em;
+    }
+
+    .job {
+        border-bottom: solid grey 2px;
+        background-color:rgb(245, 245, 245);
+        padding: 1em;
+    }
+
+    article h2 {
+        background-color: lightgray;
+        padding: 1em;
+        margin: 0em;
+        border-bottom: solid gray;
+    }
+
+    .school {
+        padding: 1em;
+        border-bottom: solid gray 2px;
+    }
+
+    a:link {
+        color: black;
+        text-decoration: underline;
+    }
+
+    a:active {
+        color:darkred;
+    }
+
+    a:visited {
+        color: darkblue;
+    }
 }
 
-h4 {
-    margin-block-start: .8em;
-    margin-block-end: .8em;
-}
-
-body {
-    display: flex;
-    justify-content: flex-start;
-    margin: 0rem;
-    /* align-items: stretch; */
-}
-
-aside {
-    display: block;
-    border-right: solid black 2px;
-    padding: 0em;
-    background-color: rgb(64, 127, 243);
-    flex-basis: 25%;
-    text-wrap: wrap;
-    
-}
-
-aside h3 {
-    background-color: rgb(116, 155, 226);
-    padding: 1em;
-}
-
-aside p {
-    margin: 0em 1em;
-}
-
-aside h2 {
-    margin: 1em;
-}
-
-#profile {
-    display: block;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 50%;
-    margin-bottom: 1em;
-    
-}
-
-article {
-    display: block;
-    padding: 0px;
-    flex-basis: 75%;
-}
-
-.skills {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-div > p {
-    padding-right: 1em;
-}
-
-.job {
-    border-bottom: solid grey 2px;
-    background-color:rgb(245, 245, 245);
-    padding: 1em;
-}
-
-article h2 {
-    background-color: lightgray;
-    padding: 1em;
-    margin: 0em;
-    border-bottom: solid gray;
-}
-
-.school {
-    padding: 1em;
-    border-bottom: solid gray 2px;
-}
-
-a:link {
-    color: black;
-    text-decoration: underline;
-}
-
-a:active {
-    color:darkred;
-}
-
-a:visited {
-    color: darkblue;
-}
+@media (min-width: 320px) and (max-width: 729px) {
+    p {
+         line-height: 1.2em;
+         margin-block-start: 0em;
+         margin-block-end: 0em;
+     }
+ 
+     h4 {
+         margin-block-start: .8em;
+         margin-block-end: .8em;
+     }
+ 
+     body {
+         display: flex;
+         justify-content: flex-start;
+         margin: 0rem;
+         flex-direction: column;
+         font-size: small;
+     }
+ 
+     aside {
+         display: block;
+         border-bottom: dashed navy;
+         padding: 0em 0em 1em 0em;
+         background-color: rgb(64, 127, 243);
+         text-wrap: wrap;
+         text-align: center;
+         
+     }
+ 
+     aside h3 {
+         background-color: rgb(116, 155, 226);
+         padding: 1em;
+     }
+ 
+     aside p {
+         margin: 0em 1em;
+     }
+ 
+     aside h2 {
+         margin: 1em;
+     }
+ 
+     #profile {
+         display: block;
+         width: 70%;
+         margin-left: auto;
+         margin-right: auto;
+         border-radius: 50%;
+         margin-bottom: 1em;
+         
+     }
+ 
+     article {
+         display: block;
+         padding: 0px;
+         flex-basis: 75%;
+     }
+ 
+     .skills {
+         display: flex;
+         justify-content: space-around;
+         flex-wrap: wrap;
+         flex-direction: column;
+     }
+ 
+     div > p {
+         padding-right: 1em;
+     }
+ 
+     .job {
+         border-bottom: solid grey 2px;
+         background-color:rgb(245, 245, 245);
+         padding: 1em;
+     }
+ 
+     article h2 {
+         background-color: lightgray;
+         padding: 1em;
+         margin: 0em;
+         border-bottom: solid gray;
+     }
+ 
+     .school {
+         padding: 1em;
+         border-bottom: solid gray 2px;
+     }
+ 
+     a:link {
+         color: black;
+         text-decoration: underline;
+     }
+ 
+     a:active {
+         color:darkred;
+     }
+ 
+     a:visited {
+         color: darkblue;
+     }
+ }
