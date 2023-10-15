@@ -13,7 +13,7 @@ body {
     display: flex;
     justify-content: flex-start;
     margin: 0rem;
-    align-items: stretch;
+    /* align-items: stretch; */
 }
 
 aside {
@@ -22,6 +22,8 @@ aside {
     padding: 0em;
     background-color: rgb(64, 127, 243);
     flex-basis: 25%;
+    text-wrap: wrap;
+    
 }
 
 aside h3 {
@@ -35,26 +37,25 @@ aside p {
 
 aside h2 {
     margin: 1em;
-    padding-top: 1em;
 }
 
 #profile {
-    width: 12em;
+    display: block;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
     border-radius: 50%;
-    margin: 1em;
+    margin-bottom: 1em;
+    
 }
 
 article {
     display: block;
-    /* border: solid brown 2px; */
     padding: 0px;
-    flex-basis: 80%;
-    /* flex-grow: 3; */
+    flex-basis: 75%;
 }
 
-div.skills {
+.skills {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -73,7 +74,7 @@ div > p {
 article h2 {
     background-color: lightgray;
     padding: 1em;
-    margin: 0px;
+    margin: 0em;
     border-bottom: solid gray;
 }
 
