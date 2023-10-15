@@ -82,3 +82,16 @@ article h2 {
     padding: 1em;
     border-bottom: solid gray 2px;
 }
+
+a:link {
+    color: black;
+    text-decoration: underline;
+}
+
+a:active {
+    color:darkred;
+}
+
+a:visited {
+    color: darkblue;
+}
